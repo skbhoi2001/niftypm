@@ -1,0 +1,207 @@
+
+        body{
+    font-family: "SF Pro Text","Helvetica Neue",Helvetica,Lato,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3a3a3a;
+        }
+        .container{
+          width: 90%;
+          margin: auto;
+        }
+        #remote,.logo,.name_logo{
+           max-width:740px;
+            height: 122px;
+            margin: auto;
+            
+        }
+        #remote{
+            text-align: center;
+            padding-top: 170px;
+        }
+        #remote>p{
+          font-size: 20px;
+           
+        }
+        .logo{
+          margin-top: 5%;
+          
+        }
+        
+        .logo,.name_logo{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content:space-evenly;  
+            
+        }
+        
+        .logo>img{
+          /* width: 50px; */
+          height: 50px;
+         
+          border: 1px solid rgb(240, 238, 238);
+          border-radius: 50%;
+          padding: 1%;
+          margin-bottom: 1%;
+          box-shadow: grey;
+        }
+        .logo > img:hover{
+          /* border: 1px solid green; */
+          transform: translateY(-20px);
+          cursor: pointer;
+        }
+
+        .name_logo>h5{
+          margin-top: -5%;
+            margin-bottom: 5%;
+            padding-left: 20px ;
+        }
+        
+        .img_1st>img{
+            width: 90%;
+            
+        }
+        /* transform :start */
+    #transform{
+      width: 100%;
+      margin: auto;
+     
+    }
+    #trans{
+      margin-top: 100px;
+      background-color: #00a99b;
+      border-radius: 20px;
+      display: grid;
+      gap: 20px;
+      overflow: hidden;
+      grid-template-areas: 't1left t1right';
+    }
+    #trans-left{
+      grid-area: t1left;
+      padding: 50px;
+      color: white;
+    }
+    #trans-left>p{
+      font-size: 20px;
+    }
+    #trans-left>div{
+      display: flex;
+    }
+    #trans-right{
+      grid-area: t1right;
+    }
+    #trans-left>div>input{
+      width: 50%;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 0;
+    }
+    #trans-left>div>button{
+      padding: 15px;
+      border-radius: 10px;
+     
+      margin-left: 5px;
+      border: 0;
+      background-color: white;
+      color: #02bdad;
+      font-size: 20px;
+    }
+    #trans-right>img{
+      
+      width: 100%;
+      
+    }
+  /* transform end */
+  #footer{
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 'f1 f2 f3 f4 f5 f6';
+    line-height: 1;
+    padding: 20px;
+    color: rgb(160, 152, 152);
+  }
+  #footer1>p:nth-child(1),#footer2>p:nth-child(1),#footer3>p:nth-child(1),#footer5>p:nth-child(1),#footer4>p:nth-child(1),#footer6>p:nth-child(1){
+    color: #6c729c;
+    font-weight: 900;
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
+  #footer2{
+    grid-area: f2;
+  }
+  #footer3{
+    grid-area: f3;
+  }
+  #footer4{
+    grid-area: f4;
+  }
+  #footer5{
+    grid-area: f5;
+  }
+  #footer6{
+    grid-area: f6;
+  }
+  #footer1{
+    grid-area: f1;
+  }
+  /* footer end */
+  @media screen and (max-width:700px){
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    .img_1st>img{
+      margin-top: 50px;
+    }
+    .logo{
+      margin-top: 80px;
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    
+    #footer{
+      grid-template-areas: 'f1 f2 '
+                            'f3 f4'
+                            'f5 f6';
+    }
+  }
+  @media screen and (max-width:1000px) and (min-width:700px){
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    
+    #footer{
+      grid-template-areas: 'f1 f2 f3 '
+                            'f4 f5 f6';
+    }
+  }
+  @media screen and (min-width:1000px){
+    #trans{
+      grid-template-areas: 't1left t1right';
+    }
+    #footer{
+      grid-template-areas: 'f1 f2 f3 f4 f5 f6';
+    }
+  }
+    

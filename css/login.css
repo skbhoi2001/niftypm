@@ -1,0 +1,153 @@
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+#img img{
+padding-top: 150px;
+width: 100px;
+}
+#img{
+margin-left: 43%;
+
+}
+#cont{
+border: 1px solid #cacfd3;
+display: flex;
+max-width: 1000px;
+margin: auto;
+margin-top: 40px;
+/* padding: 0.01px; */
+height: 600px;
+
+
+}
+
+
+#top-dash{
+display: flex;
+
+}
+#top-dash > #button {
+height: 16px;
+padding: 0.6%;
+font-size: 0.8em;
+color: white;
+background: linear-gradient(to right,#f98c41 30%,#faa75d 30%, #f98c41 40%);
+border-radius: 15px;
+margin-right: 5px;
+margin-top: 25px;
+
+}
+#dashb > div> img{
+width: 99%;
+
+}
+#dashb{
+padding: 40px;
+border-right: 1px solid #cacfd3;
+width: 45%;
+background-color: #fcf9f7;
+font-family: 'Poppins', sans-serif;
+}
+#login{
+padding: 40px;
+width: 41%;
+font-family: 'Poppins', sans-serif;
+
+}
+label,input,::placeholder{
+display: block;
+color: #989cbf
+
+}
+
+#login > h2,#login input,#sign-in-up > *{
+margin-bottom: 20px;
+}
+
+#login input{
+width: 83%;
+padding: 10px;
+height: 20px;
+outline: none;
+
+}
+input:focus{
+border-color: rgb(7, 205, 185);
+}
+
+#bt-login{
+width: 90%;
+height: 40px;
+color: white;
+background-color: rgb(76, 235, 219,0.6);
+margin-bottom: 20px;
+border: none;
+font-size: 1.05em;
+}
+#sign-in-up,a{
+text-align: center;
+text-decoration: none;
+
+}
+#googl > img{
+width: 7%;
+margin-right: 5px;
+
+}
+#googl{
+display: flex;
+justify-content: center;
+}
+#googl:hover,#sign-in-up >div:nth-child(2):hover{
+text-decoration: underline;
+}
+#googl,#sign-up a{
+color: rgb(237, 163, 98);
+}
+#sign-up{
+
+background-color: white;
+border: 1px solid #cacfd3;
+width: 50%;
+margin:auto;
+height: 25px;
+padding: 3px;
+
+}
+#sign-in-up > div:nth-child(2) > a{
+  color: black;
+}
+#sign-up a:hover{
+color:rgb(7, 205, 185);
+}
+
+@media (max-width: 900px){
+#cont{
+display: flex;
+flex-direction: column;
+border: none;
+
+}
+#dashb{
+border: 1px solid grey;
+}
+
+#login{
+margin-top: 40px;
+border: 1px solid grey;
+}
+#dashb,#login{
+width: 300px;
+margin: auto;
+}
+#top-dash > #button {
+width: 50%;
+}
+}
+
+
+
